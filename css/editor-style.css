@@ -1,0 +1,298 @@
+@charset "utf-8";
+/*
+	#newslist内部をWordpress投稿画面と同じcssが適用されるよう設定
+*/
+
+/*html .mceContentBody {
+	max-width: 640px;
+}
+.newslist_contents * {
+	color: #444;
+	font-family: Georgia, "Bitstream Charter", serif;
+	line-height: 1.5;
+}
+.newslist_contents p,
+dl,
+td,
+th,
+ul,
+ol,
+blockquote {
+	font-size: 16px;
+}
+.newslist_contents tr th,
+thead th,
+label,
+tr th,
+thead th {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+.newslist_contents pre {
+	font-family: "Courier 10 Pitch", Courier, monospace;
+}
+.newslist_contents code, code var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+.newslist_contents body, input, textarea {
+	font-size: 12px;
+	line-height: 18px;
+}*/
+.newslist_contents hr {
+	background-color: #e7e7e7;
+	border: 0;
+	clear: both;
+	height: 1px;
+	margin-bottom: 18px;
+}
+/* Text elements */
+.newslist_contents p {
+	margin-bottom: 18px;
+}
+.newslist_contents ul {
+	margin: 0 0 18px 1.5em;
+}
+.newslist_contents ul li {
+	list-style: square;
+}
+.newslist_contents ol {
+	margin: 0 0 18px 1.5em;
+}
+.newslist_contents ol li {
+	list-style: decimal;
+}
+.newslist_contents ol li ol li {
+	list-style: upper-alpha;
+}
+.newslist_contents ol li ol li ol li {
+	list-style: lower-roman;
+}
+.newslist_contents ol li ol li ol li ol li {
+	list-style: lower-alpha;
+}
+.newslist_contents ul ul,
+.newslist_contents ol ol,
+.newslist_contents ul ol,
+.newslist_contents ol ul {
+	margin-bottom: 0;
+}
+.newslist_contents dl {
+	margin: 0 0 24px 0;
+}
+.newslist_contents dt {
+	font-weight: bold;
+}
+.newslist_contents dd {
+	margin-bottom: 18px;
+}
+.newslist_contents strong {
+	color: #000;
+	font-weight: bold;
+}
+.newslist_contents cite,
+.newslist_contents em,
+.newslist_contents i {
+	border: none;
+	font-style: italic;
+}
+.newslist_contents big {
+	font-size: 131.25%;
+}
+.newslist_contents ins {
+	background: #ffc;
+	border: none;
+	color: #333;
+}
+.newslist_contents del {
+	text-decoration: line-through;
+	color: #555;
+}
+.newslist_contents blockquote {
+	font-style: italic;
+	padding: 0 3em;
+}
+.newslist_contents blockquote cite,
+.newslist_contents blockquote em,
+.newslist_contents blockquote i {
+	font-style: normal;
+}
+.newslist_contents pre {
+	background: #f7f7f7;
+	color: #222;
+	line-height: 18px;
+	margin-bottom: 18px;
+	padding: 1.5em;
+}
+.newslist_contents abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+.newslist_contents ins {
+	text-decoration: none;
+}
+.newslist_contents sup,
+.newslist_contents sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+.newslist_contents sup {
+	bottom: 1ex;
+}
+.newslist_contents sub {
+	top: .5ex;
+}
+.newslist_contents a:link {
+	color: #06c;
+}
+.newslist_contents a:visited {
+	color: #743399;
+}
+.newslist_contents a:active,
+a:hover {
+	color: #ff4b33;
+}
+.newslist_contents p,
+.newslist_contents ul,
+.newslist_contents ol,
+.newslist_contents dd,
+.newslist_contents pre,
+.newslist_contents hr {
+	margin-bottom: 24px;
+}
+.newslist_contents ul ul,
+.newslist_contents ol ol,
+.newslist_contents ul ol,
+.newslist_contents ol ul {
+	margin-bottom: 0;
+}
+.newslist_contents pre,
+.newslist_contents kbd,
+.newslist_contents tt,
+.newslist_contents var {
+	font-size: 15px;
+	line-height: 21px;
+}
+.newslist_contents code {
+	font-size: 13px;
+}
+.newslist_contents strong,
+.newslist_contents b,
+.newslist_contents dt,
+.newslist_contents th {
+	color: #000;
+}
+.newslist_contents h1,
+.newslist_contents h2,
+.newslist_contents h3,
+.newslist_contents h4,
+.newslist_contents h5,
+.newslist_contents h6 {
+	color: #000;
+	font-weight: normal;
+	line-height: 1.5em;
+	margin: 0 0 20px 0;
+}
+.newslist_contents h1 {
+	font-size: 2.4em;
+}
+.newslist_contents h2 {
+	font-size: 1.8em;
+}
+.newslist_contents h3 {
+	font-size: 1.4em;
+}
+.newslist_contents h4 {
+	font-size: 1.2em;
+}
+.newslist_contents h5 {
+	font-size: 1em;
+}
+.newslist_contents h6 {
+	font-size: 0.9em;
+}
+.newslist_contents table {
+	border: 1px solid #e7e7e7 !important;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0 -1px 24px 0;
+	text-align: left;
+	width: 100%;
+}
+.newslist_contents tr th,
+.newslist_contents thead th {
+	border: none !important;
+	color: #888;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 9px 13px;
+	vertical-align: middle;
+}
+.newslist_contents tr td {
+	border: none !important;
+	border-top: 1px solid #e7e7e7 !important;
+	padding: 6px 13px;
+}
+.newslist_contents img {
+	margin: 0;
+}
+.newslist_contents img.size-auto,
+.newslist_contents img.size-large,
+.newslist_contents img.size-full,
+.newslist_contents img.size-medium {
+	max-width: 100%;
+	height: auto;
+}
+.newslist_contents .alignleft,
+.newslist_contents img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.newslist_contents .alignright,
+.newslist_contents img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.newslist_contents .aligncenter,
+.newslist_contents img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.newslist_contents img.alignleft,
+.newslist_contents img.alignright,
+.newslist_contents img.aligncenter {
+	margin-bottom: 12px;
+}
+.newslist_contents .wp-caption {
+	background: #f1f1f1;
+	border: none;
+	-khtml-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	color: #888;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.newslist_contents .wp-caption img {
+	margin: 5px;
+}
+.newslist_contents .wp-caption p.wp-caption-text {
+	margin: 0 0 4px;
+}
+.newslist_contents .wp-smiley {
+	margin: 0;
+}

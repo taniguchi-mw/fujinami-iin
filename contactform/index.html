@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta name="robots" content="noindex,nofollow" />
+<link href="formcommon.css" rel="stylesheet" type="text/css" />
+<title>お問い合わせ | 藤浪医院</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30334537-7', 'fujinami-iin.com');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<header id="gHeader">
+  <div id="logo"><img src="images/logo.png" alt="藤浪医院" /></div>
+  <h1>お問い合わせフォーム</h1>
+</header>
+<article id="container">
+  <h2>同意画面</h2>
+  <div class="step"><img src="images/step01.jpg" /></div>
+  <div class="conbox840">
+    <h3>藤浪医院へのお問い合わせフォーム</h3>
+    <div class="box840">
+      <p>メールフォームでのお問い合せは、「個人情報の取り扱い・利用目的」をご確認いただき、同意の上送信をお願い致します。 <br>
+        <span class="fc-red">※お急ぎの方はフォームでなく、お電話でご連絡ください。</span></p>
+      <h4>個人情報の取り扱い・利用目的</h4>
+      <div class="ta-c">
+        <iframe src="pp.html" width="840" height="300" style="border:1px #999 double;"></iframe>
+      </div>
+    </div>
+    <div class="ta-c mt-30">
+      <form method="LINK" action="form.php">
+        【個人情報の取り扱い・利用目的】に<br />
+        <input type="submit" value="同意する" style="width:260px;height:35px; margin-top:5px;" />
+      </form>
+      <input style="width: 130px; margin-top:5px;" value="同意しない" name="noagree" onClick="alert('同意頂けない場合は、先に進むことが出来ません。\n')" type="button" />
+    </div>
+  </div>
+</article>
+<aside class="f_bg clear">
+  <footer id="gFooter">
+    <p id="copy" class="clear"><small>Copyright &copy; Fujinami-Clinic. All rights reserved.</small></p>
+  </footer>
+</aside>
+</body>
+</html>
